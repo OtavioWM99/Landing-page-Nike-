@@ -12,6 +12,10 @@ body{
 /* header style
 ===================================*/
 
+.nike{
+    width: 16vh;
+}
+
 .header{
   position:relative;
 }
@@ -29,7 +33,7 @@ body{
     line-height: 36px;
 	text-transform:capitalize;
     font-size: 16px;
-	font-weight:400;
+	font-weight:500;
     color:#000000;
     transition: 0.15s;
 }
@@ -158,8 +162,18 @@ span, i, button, a{
     margin-left: 3px;
 }
 
+.section button:hover{
+    background-color: #ccff3f;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+.section button:focus{
+    outline: none;
+}
+
 .look {
-    color: #05cc47;
+    color: #0805cc;
     font-size: 3.7em;
     transform: rotate(90deg);
 }
@@ -168,26 +182,9 @@ span, i, button, a{
     transform: rotate(-25deg); 
     
 }
-
-
-.alta-title{
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #000000;
-    opacity: 0.7;
-    z-index: 1;
-    position: absolute;
-    right: 0; 
-	transform: rotate(90deg) translateY(-60px);
-}
-
 .alta img {
-    width:100%;
-    height: auto;
+    width:95%;
 }
-
 
 
 /* banner  css design
@@ -306,7 +303,7 @@ button, input {
 .produto{
     position: relative;     
     padding: 20px;
-    margin-top: 30px;   
+    margin-top: 30px;  
 }
 
 .produto-categoria{
@@ -331,13 +328,13 @@ button, input {
 
 .produto-card{
     flex: 0 0 auto;
-    width: 250px;
+    width: 230px;
     margin-right: 40px;
     background-color: #f1f0f0;
     border-radius: 16px;
     padding: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s e
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 .produto-card:hover{
     cursor: pointer;
@@ -450,6 +447,7 @@ button, input {
 .pre-btn{
     left: 0;
     transform: rotate(180deg);
+    border: none;
 }
 
 .nxt-btn{
@@ -464,6 +462,12 @@ button, input {
 .pre-btn:hover img,
 .nxt-btn:hover img {
     opacity: 1;
+    border: none;
+}
+
+.pre-btn:focus,
+.nxt-btn:focus {
+    outline: none;
 }
 
 .collection-container{
